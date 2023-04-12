@@ -1,4 +1,10 @@
-<main class="container">
-	<img src="" alt="Dog Image Generator">
-	<button type="button">Gerar uma nova imagem</button>
+<main class="container" *ngIf="dogImage">
+	<div class="circle" id="circle1"></div>
+	<img src="{{ dogImage.url }}" alt="Dog Image Generator" *ngIf="dogImage.type !== 'mp4' else isMp4Video">
+	<ng-template #isMp4Video>
+		<video controls class="video">
+			<source src="{{ dogImage.url }}" type="video/mp4">
+		</video>
+	</ng-template>
+	<button type="button" (click)="getNewDog()">{{ btnText }}</button>
 </main>

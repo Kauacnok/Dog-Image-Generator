@@ -1,4 +1,5 @@
 footer {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,4 +16,11 @@ footer {
 
 footer h2, footer p {
 	color: #EFEFEF;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	footer h2 {
+		font-size: 1rem;
+	}
 }

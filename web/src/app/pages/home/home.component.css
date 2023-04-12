@@ -7,6 +7,18 @@
 	margin-top: 1em;
 }
 
+.container img {
+	width: 50%;
+	border-radius: 10px;
+	z-index: 4;
+}
+
+.container .video {
+	width: 30%;
+	border-radius: 10px;
+	z-index: 4;
+}
+
 .container button {
 	background-color: transparent;
 	border: 0px;
@@ -15,11 +27,24 @@
 	border-radius: 10px;
 	font-size: 1.4rem;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 	color: #EFEFEF;
 	transition: .4s;
 	cursor: pointer;
+	z-index: 4;
 }
 
 .container button:hover {
-	background-color: #5a2a27;
+	background-color: #5c4742;
+	border: 2px solid #5a2a27;
+}
+
+@media (max-width: 768px) {
+	.container .video {
+		width: 50%;
+	}
+
+	.container button {
+		font-size: 1rem;
+	}
 }

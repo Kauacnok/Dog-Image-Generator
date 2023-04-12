@@ -2,5 +2,9 @@
 	padding: 0;
 	margin: 0;
 	font-family: Cambria, arial;
-	box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	background-color: #a5978b;
 }

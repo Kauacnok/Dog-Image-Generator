@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 60vh;
+	margin-top: 1em;
+}
+
+.container button {
+	background-color: transparent;
+	border: 0px;
+	padding: 10px 10px;
+	border: 2px solid #5a2a27;
+	border-radius: 10px;
+	font-size: 1.4rem;
+	margin-top: 1rem;
+	color: #EFEFEF;
+	transition: .4s;
+	cursor: pointer;
+}
+
+.container button:hover {
+	background-color: #5a2a27;
+}

@@ -21,11 +21,13 @@ body {
 #circle1 {
 	top: 80px;
 	left: -200px;
+	box-shadow: 0px -10px 10px -10px #5c4742;
 }
 
 #circle2 {
 	bottom: 0px;
 	right: 0px;
+	box-shadow: 0px 2px 5px #5c4742;
 }
 
 @media (max-width: 768px) {

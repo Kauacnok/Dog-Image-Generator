@@ -1,4 +1,4 @@
-.container {
+.container, .container-loading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -20,6 +20,9 @@
 }
 
 .container button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: transparent;
 	border: 0px;
 	padding: 10px 10px;
@@ -39,6 +42,26 @@
 	border: 2px solid #5a2a27;
 }
 
+.container-loading {
+	flex-direction: row;
+	gap: 5px;
+}
+
+.container-loading h1 {
+	color: white;
+}
+
+.image-spin {
+	animation: spin 1s linear infinite;
+}
+
+#image-spin-on-button svg {
+	display: inline;
+	width: 32px;
+	height: 32px;
+	animation: spin 1s linear infinite;
+}
+
 @media (max-width: 768px) {
 	.container .video {
 		width: 50%;
@@ -47,4 +70,17 @@
 	.container button {
 		font-size: 1rem;
 	}
+
+	.container-loading h1 {
+		font-size: 1rem;
+	}
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
